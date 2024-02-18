@@ -39,7 +39,7 @@
 # print(colors)
 
 
-colors = ['red', 'green', 'gray', 'black', 'yellow', 'blue']
+# colors = ['red', 'green', 'gray', 'black', 'yellow', 'blue']
 
 # # 오름차순 정렬
 # colors.sort()
@@ -53,9 +53,28 @@ colors = ['red', 'green', 'gray', 'black', 'yellow', 'blue']
 
 
 
-# 길이 - 요소의 개수
-print(len(colors))
+# # 길이 - 요소의 개수
+# print(len(colors))
 
-# 리스트의 마지막 값 확인
-print(colors[-1])
+# # 리스트의 마지막 값 확인
+# print(colors[-1])
 
+
+
+colors = ['red', 'green', 'gray', 'black', 'yellow', 'blue']
+
+# 원본 데이터의 왜곡방지로 다른변수에 할당
+color_2 = colors[:]
+print(color_2)
+
+# `a:b` 리스트내 a에서 b까지
+# print(colors[1:6])
+
+# `:a` 리스트내 a까지
+print(colors[:4])
+
+# `a:` 리스트내 a부터
+# print(colors[2:])
+
+# `-1:` 리스트내 뒤에서부터 첫번째
+# print(colors[-1:])
