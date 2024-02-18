@@ -92,9 +92,28 @@ scores = [11, 22, 77, 33, 44, 55]
 #     print(score)
 
 
-# 40이상의 수를 출력, 그 외는 실패로 설정
-for score in scores:
-    if score >= 40:    
-        print(score)
-    else:
-        print("Fail")
+# # 40이상의 수를 출력, 그 외는 실패로 설정
+# for score in scores:
+#     if score >= 40:    
+#         print(score)
+#     else:
+#         print("Fail")
+
+# 리스트의 최대, 최소, 총합 정렬
+
+# max_val = max(scores)
+# min_val = min(scores)
+
+# # 파이썬 내부 함수 `sum`을 이용한 총합 
+# sum_val = sum(scores)
+# print(sum_val)
+
+# # sum이라는 결과를 만든 조건문을 이용한 총합
+# sum_values = 0
+# for score in scores:
+#     sum_values = sum_values+score
+# print(sum_values)
+
+# 평균값 출력
+avg_val = sum(scores) / len(scores)
+print(avg_val)
