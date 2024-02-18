@@ -61,20 +61,40 @@
 
 
 
-colors = ['red', 'green', 'gray', 'black', 'yellow', 'blue']
+# colors = ['red', 'green', 'gray', 'black', 'yellow', 'blue']
 
-# 원본 데이터의 왜곡방지로 다른변수에 할당
-color_2 = colors[:]
-print(color_2)
+# # 원본 데이터의 왜곡방지로 다른변수에 할당
+# color_2 = colors[:]
+# print(color_2)
 
-# `a:b` 리스트내 a에서 b까지
-# print(colors[1:6])
+# # `a:b` 리스트내 a에서 b까지
+# # print(colors[1:6])
 
-# `:a` 리스트내 a까지
-print(colors[:4])
+# # `:a` 리스트내 a까지
+# print(colors[:4])
 
-# `a:` 리스트내 a부터
-# print(colors[2:])
+# # `a:` 리스트내 a부터
+# # print(colors[2:])
 
-# `-1:` 리스트내 뒤에서부터 첫번째
-# print(colors[-1:])
+# # `-1:` 리스트내 뒤에서부터 첫번째
+# # print(colors[-1:])
+
+
+
+scores = [11, 22, 77, 33, 44, 55]
+
+# reverse 옵션에 따른 오름,내림차순 정렬
+# scores.sort(reverse=True)
+# print(scores)
+
+# # in 뒤의 scores의 요소들인 score를 하나하나 정렬
+# for score in scores:
+#     print(score)
+
+
+# 40이상의 수를 출력, 그 외는 실패로 설정
+for score in scores:
+    if score >= 40:    
+        print(score)
+    else:
+        print("Fail")
