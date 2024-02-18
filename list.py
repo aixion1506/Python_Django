@@ -14,7 +14,7 @@
 # my_list = [123, 'apple']
 # print(my_list)
 
-colors = ['red', 'green', 'blue']
+# colors = ['red', 'green', 'blue']
 
 # colors[2] = 'black'
 # print(colors)
@@ -35,5 +35,27 @@ colors = ['red', 'green', 'blue']
 # color = colors.pop(0)
 # print(color)
 
-colors.remove('blue')
-print(colors)
+# colors.remove('blue')
+# print(colors)
+
+
+colors = ['red', 'green', 'gray', 'black', 'yellow', 'blue']
+
+# # 오름차순 정렬
+# colors.sort()
+# print(colors)
+# print(sorted(colors))
+
+
+# # 내림차순 정렬
+# colors.sort(reverse=True)
+# print(colors)
+
+
+
+# 길이 - 요소의 개수
+print(len(colors))
+
+# 리스트의 마지막 값 확인
+print(colors[-1])
+
