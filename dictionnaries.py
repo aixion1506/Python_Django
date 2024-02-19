@@ -26,3 +26,12 @@ print(student)
 # 기존 요소 삭제
 del student["grade"]
 print(student)
+
+# 데이터 접근 및 미발견시
+print(student.get("vvs", "해당 키-값 쌍이 존재하지 않음"))
+
+# 딕셔너리 키 반환
+print(list(student.keys()))
+
+# 딕셔너리 값 반환
+print(list(student.values()))
