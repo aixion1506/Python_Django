@@ -1,5 +1,6 @@
-# 클래스 - 설계
-
+"""
+객체지향 - 설계
+""" 
 class Student:
     def __init__(self, name, major):
         self.name = name
@@ -19,9 +20,9 @@ class Student:
 
 student_1 = Student('라니안', '컴공과')
 
-student_1.edit_major('기계공학과')
+# student_1.edit_major('기계공학과')
 
-print(student_1.major)
+# print(student_1.major)
 
 
 
@@ -34,3 +35,29 @@ print(student_1.major)
 # print(student_1_graduated)
 
 # student_1.study()
+
+
+
+"""
+객체지향 - 상속
+"""
+
+class ForeignStudent(Student):
+    def __init__(self, name, major, country):
+        #  `super()`는 기존 부모 클래스의 인자를 계승
+        super().__init__(name, major)
+        #  `ForeignStudent`클래스만의 새로운 인자를 self로 선언
+        self.country = country
+
+    # 오버라이딩
+    # 부모클래스의 함수를 가져와 자식클래스에서 수정해 사용하는것
+    def study(self):
+        print(f'{self.name} is studying now')
+
+foreign_stud_1 = ForeignStudent('라니학교', '고양이과', '라니랜드')
+print(foreign_stud_1.name)
+print(foreign_stud_1.major)
+print(foreign_stud_1.is_graduated)
+print(foreign_stud_1.country)
+
+foreign_stud_1.study()
